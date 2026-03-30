@@ -1,0 +1,211 @@
+[versions]
+# kotlin
+kotlinVersion = "2.0.21"
+
+# kotlinx
+kotlinxSerializationVersion = "1.7.3"
+kotlinxDateTimeVersion = "0.4.0"
+coroutinesVersion = "1.9.0"
+
+# ktor
+ktorClientVersion = "3.0.3"
+
+#koin
+koinVersion = "4.0.4"
+koinComposeMultiplatform = "4.0.4"
+
+# android compose
+androidx-compose-bom = "2024.05.00"
+composeActivitylVersion = "1.9.0"
+composeVersion = "1.7.5"
+composeMaterial3Version = "1.3.0"
+composeConstraintlayoutVersion = "1.1.0"
+
+# moko
+mokoGraphicsVersion = "0.9.0" # do not update this libs
+mokoParcelizeVersion = "0.9.0"
+mokoResourcesVersion = "0.24.5"
+mokoMvvmVersion = "0.16.1"
+mokoNetworkVersion = "0.21.2"
+mokoPermissionsVersion = "0.18.0"
+mokoFieldsVersion = "0.12.0"
+
+# multiplatform
+multiplatformSettingsVersion = "1.2.0"
+napierVersion = "2.7.1"
+klockVersion = "3.4.0"
+atomicfuVersion = "0.25.0"
+navigationComposeVersion = "2.8.5"
+realmVersion = "2.3.0"
+realmNewVersion = "10.19.0"
+
+# android
+materialVersion = "1.12.0"
+recyclerViewVersion = "1.3.2"
+threetenAbpVersion = "1.4.6"
+swipeRefreshLayoutVersion = "1.1.0"
+constraintLayoutVersion = "2.1.4"
+lifecycleVersion = "2.8.6"
+glideVersion = "4.16.0"
+glideComposeVersion = "1.0.0-beta01"
+hiltVersion = "2.38.1"
+prolificInteractiveCalendarVersion = "2.0.1"
+androidAppCompatVersion = "1.6.1"
+multidexVersion = "2.0.1"
+appMetricaVersion = "5.3.0"
+yandexVersionMaps = "4.19.0-navikit"
+firebaseVersion = "23.4.1"
+biometricVersion = "1.1.0"
+pagingVersion = "3.2.1"
+okHttpVersion = "4.12.0"
+inputMaskVersion = "6.1.0"
+googleServicesVersion = "4.4.1"
+firebaseCoreVersion = "21.1.1"
+crashlyticsVersion = "19.2.0"
+crashlyticsGradleVersion = "3.0.2"
+bomVersion = "33.4.0"
+converterGsonVersion = "2.8.1"
+androidxLifecycleVersion = "2.8.6"
+skieVersion = "0.9.3"
+coilVersion = "3.0.4"
+cameraxVersion = "1.4.1"
+
+# android tests
+espressoCoreVersion = "3.2.0"
+testRunnerVersion = "1.2.0"
+testExtJunitVersion = "1.1.1"
+testCoreVersion = "1.3.0"
+robolectricVersion = "4.6.1"
+
+[libraries]
+# kotlin
+kotlinTestJUnit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlinVersion" }
+
+# kotlinx
+kotlinSerialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationVersion" }
+kotlinxDateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTimeVersion" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+
+# ktor
+ktorClient = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientVersion" }
+ktorClientAuth = { module = "io.ktor:ktor-client-auth", version.ref = "ktorClientVersion" }
+ktorClientLogging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClientVersion" }
+ktorClientAndroid = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClientVersion" }
+ktorClientIOS = { module = "io.ktor:ktor-client-ios", version.ref = "ktorClientVersion" }
+ktorClientMock = { module = "io.ktor:ktor-client-mock", version.ref = "ktorClientVersion" }
+
+#koin
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinVersion" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinVersion" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinVersion" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koinComposeMultiplatform" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koinComposeMultiplatform" }
+
+# moko
+mokoResources = { module = "dev.icerock.moko:resources", version.ref = "mokoResourcesVersion" }
+mokoParcelize = { module = "dev.icerock.moko:parcelize", version.ref = "mokoParcelizeVersion" }
+mokoGraphics = { module = "dev.icerock.moko:graphics", version.ref = "mokoGraphicsVersion" }
+mokoPermissions = { module = "dev.icerock.moko:permissions", version.ref = "mokoPermissionsVersion" }
+mokoFieldsCore = { module = "dev.icerock.moko:fields-core", version.ref = "mokoFieldsVersion" }
+
+mokoMvvmCore = { module = "dev.icerock.moko:mvvm-core", version.ref = "mokoMvvmVersion" }
+mokoMvvmFlow = { module = "dev.icerock.moko:mvvm-flow", version.ref = "mokoMvvmVersion" }
+mokoMvvmState = { module = "dev.icerock.moko:mvvm-state", version.ref = "mokoMvvmVersion" }
+mokoMvvmDataBinding = { module = "dev.icerock.moko:mvvm-databinding", version.ref = "mokoMvvmVersion" }
+mokoMvvmFlowResources = { module = "dev.icerock.moko:mvvm-flow-resources", version.ref = "mokoMvvmVersion" }
+mokoMvvmFlowCompose = { module = "dev.icerock.moko:mvvm-flow-compose", version.ref = "mokoMvvmVersion" }
+
+mokoNetwork = { module = "dev.icerock.moko:network", version.ref = "mokoNetworkVersion" }
+mokoNetworkEngine = { module = "dev.icerock.moko:network-engine", version.ref = "mokoNetworkVersion" }
+mokoNetworkErrors = { module = "dev.icerock.moko:network-errors", version.ref = "mokoNetworkVersion" }
+
+
+# multiplatform
+multiplatformSettings = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatformSettingsVersion" }
+multiplatformSettingsTest = { module = "com.russhwolf:multiplatform-settings-test", version.ref = "multiplatformSettingsVersion" }
+napier = { module = "io.github.aakira:napier", version.ref = "napierVersion" }
+klock = { module = "com.soywiz.korlibs.klock:klock", version.ref = "klockVersion" }
+
+atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "atomicfuVersion" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationComposeVersion" }
+realmKotlin = { module = "io.realm.kotlin:library-base", version.ref = "realmVersion" }
+bom = { module = "com.google.firebase:firebase-bom", version.ref = "bomVersion" }
+crashlytics = { module = "com.google.firebase:firebase-crashlytics", version.ref = "crashlyticsVersion" }
+
+
+# android compose
+composeBom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
+compose = { module = "androidx.compose.ui:ui" }
+composeActivity = { module = "androidx.activity:activity-compose", version.ref = "composeActivitylVersion"}
+composeTooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "composeVersion" }
+composePreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "composeVersion" }
+# Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
+composeFoundation= { module = "androidx.compose.foundation:foundation" }
+composeFoundationLayout = { module = "androidx.compose.foundation:foundation-layout" }
+composeMaterial = { module = "androidx.compose.material:material" }
+composeMaterialIconsExtended = { module = "androidx.compose.material:material-icons-extended" }
+composeMaterial3 = { module = "androidx.compose.material3:material3", version.ref = "composeMaterial3Version" }
+composeGlide = { module = "com.github.bumptech.glide:compose", version.ref = "glideComposeVersion"}
+# Integration with observables
+composeConstraintlayout = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "composeConstraintlayoutVersion"}
+
+# android
+appCompat = { module = "androidx.appcompat:appcompat", version.ref = "androidAppCompatVersion" }
+material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+prolificInteractiveCalendar = { module = "com.github.prolificinteractive:material-calendarview", version.ref = "prolificInteractiveCalendarVersion" }
+recyclerView = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerViewVersion" }
+swipeRefreshLayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swipeRefreshLayoutVersion" }
+constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayoutVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+androidxLifecycleViewModel = {module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleVersion"}
+#androidxLifecycleViewModelCompose = {module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleVersion"}
+lifecycleRuntime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleVersion" }
+lifecycleViewModelSavedState = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycleVersion" }
+lifecycleCommonJava8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycleVersion" }
+lifecycleServices = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycleVersion" }
+lifecycleProcess = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycleVersion" }
+lifecycleReactiveStreams = { module = "androidx.lifecycle:lifecycle-reactivestreams-ktx", version.ref = "lifecycleVersion" }
+multidex = { module = "androidx.multidex:multidex", version.ref = "multidexVersion" }
+appMetrica = { module = "com.yandex.android:mobmetricalib", version.ref = "appMetricaVersion" }
+yandexMaps = { module = "com.yandex.android:maps.mobile", version.ref = "yandexVersionMaps" }
+firebase = { module = "com.google.firebase:firebase-messaging", version.ref = "firebaseVersion" }
+biometric = { module = "androidx.biometric:biometric", version.ref = "biometricVersion" }
+paging = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingVersion" }
+okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttpVersion" }
+okHttpLogins = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okHttpVersion" }
+inputMask = { module = "com.github.RedMadRobot:input-mask-android", version.ref = "inputMaskVersion" }
+okHttpUrlconnection = { module = "com.squareup.okhttp3:okhttp-urlconnection", version.ref = "okHttpVersion" }
+threetenAbp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "threetenAbpVersion" }
+converterGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGsonVersion" }
+coilCompose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilVersion" }
+coilNetWork = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilVersion" }
+cameraCore = { module = "androidx.camera:camera-core", version.ref = "cameraxVersion" }
+camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraxVersion" }
+cameraView = { module = "androidx.camera:camera-view", version.ref = "cameraxVersion" }
+cameraLifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraxVersion" }
+
+# android tests
+espressoCore = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+testCore = { module = "androidx.test:core", version.ref = "testCoreVersion" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectricVersion" }
+testRunner = { module = "androidx.test:runner", version.ref = "testRunnerVersion" }
+testRules = { module = "androidx.test:rules", version.ref = "testRunnerVersion" }
+testExtJunit = { module = "androidx.test.ext:junit", version.ref = "testExtJunitVersion" }
+
+# gradle plugins artifacts
+mokoResourcesGeneratorGradle = { module = "dev.icerock.moko:resources-generator", version.ref = "mokoResourcesVersion" }
+mokoNetworkGeneratorGradle = { module = "dev.icerock.moko:network-generator", version.ref = "mokoNetworkVersion" }
+kotlinSerializationGradle = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlinVersion" }
+realmGradle = { module = "io.realm.kotlin:gradle-plugin", version.ref="realmVersion" }
+
+#googleServicesGradle = { module = "com.google.gms:google-services", version.ref="googleServicesVersion" }
+crashlyticsGradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "crashlyticsGradleVersion" }
+firebaseCoreGradle = { module = "com.google.firebase:firebase-core", version.ref="firebaseCoreVersion" }
+realmNewGradle = { module = "io.realm:realm-gradle-plugin", version.ref="realmNewVersion" }
+
+[plugins]
+#google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesVersion" }
+crashlytics-plugin = { id = "com.google.firebase.crashlytics", version.ref = "crashlyticsVersion" }
+touchlab-skie = { id = "co.touchlab.skie", version.ref="skieVersion" }
+atomicfu = { id = "org.jetbrains.kotlinx.atomicfu", version.ref = "atomicfuVersion" }
+moko-resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "mokoResourcesVersion" }
